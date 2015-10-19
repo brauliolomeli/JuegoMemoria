@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zhD-m1-mLV">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="zDT-Xg-it0">
+            <objects>
+                <navigationController id="zhD-m1-mLV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="coe-nq-Kaq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3eb-kx-GKI" kind="relationship" relationship="rootViewController" id="Mdh-Pe-kT3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kro-NG-GnZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="399"/>
+        </scene>
+        <!--Seleccionar Tablero-->
+        <scene sceneID="2Lf-CD-6fS">
+            <objects>
+                <viewController title="Seleccionar Tablero" id="3eb-kx-GKI" customClass="MenuVC" customModule="semana2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iFB-k6-5jf"/>
+                        <viewControllerLayoutGuide type="bottom" id="i5X-ZX-iMB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SYl-UH-pN4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wny-oF-gUE">
+                                <rect key="frame" x="20" y="285" width="560" height="30"/>
+                                <animations/>
+                                <state key="normal" title="3 x 3"/>
+                                <connections>
+                                    <segue destination="ZVE-hr-rQD" kind="show" identifier="sg3" id="yhP-Td-6Cx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nu-xc-sMn">
+                                <rect key="frame" x="20" y="385" width="560" height="30"/>
+                                <animations/>
+                                <state key="normal" title="4 x 4"/>
+                                <connections>
+                                    <segue destination="ZVE-hr-rQD" kind="show" identifier="sg4" id="laL-Vm-Llh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaE-Uq-Kxr">
+                                <rect key="frame" x="20" y="185" width="560" height="30"/>
+                                <animations/>
+                                <state key="normal" title="2 x 2"/>
+                                <connections>
+                                    <segue destination="ZVE-hr-rQD" kind="show" identifier="sg2" id="F9w-hC-0Gc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RaE-Uq-Kxr" firstAttribute="trailing" secondItem="SYl-UH-pN4" secondAttribute="trailingMargin" id="6os-h6-FGY"/>
+                            <constraint firstItem="RaE-Uq-Kxr" firstAttribute="top" secondItem="iFB-k6-5jf" secondAttribute="bottom" constant="121" id="HdV-6Z-euN"/>
+                            <constraint firstItem="Wny-oF-gUE" firstAttribute="leading" secondItem="SYl-UH-pN4" secondAttribute="leadingMargin" id="IYo-el-SV1"/>
+                            <constraint firstItem="6nu-xc-sMn" firstAttribute="trailing" secondItem="SYl-UH-pN4" secondAttribute="trailingMargin" id="OSt-GY-CH5"/>
+                            <constraint firstItem="6nu-xc-sMn" firstAttribute="top" secondItem="Wny-oF-gUE" secondAttribute="bottom" constant="70" id="UUO-Xu-2cx"/>
+                            <constraint firstItem="Wny-oF-gUE" firstAttribute="top" secondItem="RaE-Uq-Kxr" secondAttribute="bottom" constant="70" id="nqu-Zt-okd"/>
+                            <constraint firstItem="Wny-oF-gUE" firstAttribute="trailing" secondItem="SYl-UH-pN4" secondAttribute="trailingMargin" id="szg-ev-pK8"/>
+                            <constraint firstItem="6nu-xc-sMn" firstAttribute="leading" secondItem="SYl-UH-pN4" secondAttribute="leadingMargin" id="vN3-fH-Jes"/>
+                            <constraint firstItem="RaE-Uq-Kxr" firstAttribute="leading" secondItem="SYl-UH-pN4" secondAttribute="leadingMargin" id="wSY-Gs-Vs9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Seleccione un Tablero" id="bKP-9A-Z3C"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="inE-nd-smC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="399"/>
+        </scene>
+        <!--Juego de Memoria-->
+        <scene sceneID="R7l-p7-b3a">
+            <objects>
+                <viewController id="ZVE-hr-rQD" customClass="vc2x2" customModule="semana2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CVM-zT-ypQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ywM-sL-PMv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="En9-qh-pfd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaF-kT-0Y4" customClass="BtnOpcion" customModule="semana2" customModuleProvider="target">
+                                <rect key="frame" x="94" y="246" width="66" height="66"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="4" backgroundImage="Circle_Green.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="b4p:" destination="ZVE-hr-rQD" eventType="touchUpInside" id="X4y-Ev-MR8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cy7-ht-RYk" customClass="BtnOpcion" customModule="semana2" customModuleProvider="target">
+                                <rect key="frame" x="94" y="172" width="66" height="66"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="2" backgroundImage="Circle_Blue.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="b2p:" destination="ZVE-hr-rQD" eventType="touchUpInside" id="vCL-U8-WQE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YI-1E-SG8" customClass="BtnOpcion" customModule="semana2" customModuleProvider="target">
+                                <rect key="frame" x="20" y="246" width="66" height="66"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="3" backgroundImage="Circle_Yellow.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="b3p:" destination="ZVE-hr-rQD" eventType="touchUpInside" id="aDb-Hg-U2J"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Éxitos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1l-aP-Ynd">
+                                <rect key="frame" x="20" y="72" width="58" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="4bv-zo-kVe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensajes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9A-bg-ITi">
+                                <rect key="frame" x="20" y="101" width="560" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="it5-DO-zr5">
+                                <rect key="frame" x="77" y="72" width="42" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="zFo-Tb-nqr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nA-LL-7t5">
+                                <rect key="frame" x="514" y="72" width="66" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="h9y-Ag-BcA"/>
+                                </constraints>
+                                <state key="normal" title="Reiniciar"/>
+                                <connections>
+                                    <action selector="reiniciar:" destination="ZVE-hr-rQD" eventType="touchUpInside" id="A4g-jU-v7p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2C-3d-ySN" customClass="BtnOpcion" customModule="semana2" customModuleProvider="target">
+                                <rect key="frame" x="20" y="172" width="66" height="66"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="1" backgroundImage="Circle_Red.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="b1p:" destination="ZVE-hr-rQD" eventType="touchUpInside" id="rEE-hS-Rph"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDO-UL-Sks" customClass="BtnOpcion" customModule="semana2" customModuleProvider="target">
+                                <rect key="frame" x="242" y="320" width="66" height="66"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="12" backgroundImage="Circle_Red.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="b12p:" destination="ZVE-hr-rQD" eventType="touchUpInside" id="JgC-UB-Qlb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDK-Ol-yo6" customClass="BtnOpcion" customModule="semana2" customModuleProvider="target">
+                                <rect key="frame" x="168" y="394" width="66" height="66"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="14" backgroundImage="Circle_Red.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="b14p:" destination="ZVE-hr-rQD" eventType="touchUpInside" id="aP4-l1-1eG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYB-cK-xJf" customClass="BtnOpcion" customModule="semana2" customModuleProvider="target">
+                                <rect key="frame" x="94" y="394" width="66" height="66"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="15" backgroundImage="Circle_Red.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="b15p:" destination="ZVE-hr-rQD" eventType="touchUpInside" id="ubm-80-btJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCa-1p-aUF" customClass="BtnOpcion" customModule="semana2" customModuleProvider="target">
+                                <rect key="frame" x="20" y="394" width="66" height="66"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="16" backgroundImage="Circle_Red.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="b16p:" destination="ZVE-hr-rQD" eventType="touchUpInside" id="Bde-uV-J0l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTX-DW-HnQ" customClass="BtnOpcion" customModule="semana2" customModuleProvider="target">
+                                <rect key="frame" x="242" y="246" width="66" height="66"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="11" backgroundImage="Circle_Red.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="b11p:" destination="ZVE-hr-rQD" eventType="touchUpInside" id="ntm-gT-iQD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCR-6I-Ijb" customClass="BtnOpcion" customModule="semana2" customModuleProvider="target">
+                                <rect key="frame" x="242" y="172" width="66" height="66"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="10" backgroundImage="Circle_Red.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="b10p:" destination="ZVE-hr-rQD" eventType="touchUpInside" id="a6N-tj-ldV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d17-jG-eEp" customClass="BtnOpcion" customModule="semana2" customModuleProvider="target">
+                                <rect key="frame" x="168" y="320" width="66" height="66"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="7" backgroundImage="Circle_Red.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="b7p:" destination="ZVE-hr-rQD" eventType="touchUpInside" id="qzt-8O-Tuk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLb-y9-Zwn" customClass="BtnOpcion" customModule="semana2" customModuleProvider="target">
+                                <rect key="frame" x="94" y="320" width="66" height="66"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="8" backgroundImage="Circle_Red.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="b8p:" destination="ZVE-hr-rQD" eventType="touchUpInside" id="EWK-V2-jIs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSS-QQ-8vX" customClass="BtnOpcion" customModule="semana2" customModuleProvider="target">
+                                <rect key="frame" x="20" y="320" width="66" height="66"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="9" backgroundImage="Circle_Red.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="b9p:" destination="ZVE-hr-rQD" eventType="touchUpInside" id="g2F-7z-ccZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9s-Et-h5T" customClass="BtnOpcion" customModule="semana2" customModuleProvider="target">
+                                <rect key="frame" x="168" y="246" width="66" height="66"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="6" backgroundImage="Circle_Red.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="b6p:" destination="ZVE-hr-rQD" eventType="touchUpInside" id="wSU-1f-nXH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBx-G0-nLj" customClass="BtnOpcion" customModule="semana2" customModuleProvider="target">
+                                <rect key="frame" x="168" y="172" width="66" height="66"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="5" backgroundImage="Circle_Red.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="b5p:" destination="ZVE-hr-rQD" eventType="touchUpInside" id="QL6-Kb-xdt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xqw-9T-sKA" customClass="BtnOpcion" customModule="semana2" customModuleProvider="target">
+                                <rect key="frame" x="242" y="394" width="66" height="66"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="13" backgroundImage="Circle_Red.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="b13p:" destination="ZVE-hr-rQD" eventType="touchUpInside" id="Hin-cx-GsP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E1l-aP-Ynd" firstAttribute="top" secondItem="CVM-zT-ypQ" secondAttribute="bottom" constant="8" id="93Q-Vi-i7f"/>
+                            <constraint firstItem="z9A-bg-ITi" firstAttribute="leading" secondItem="En9-qh-pfd" secondAttribute="leadingMargin" id="BZ6-iI-TlZ"/>
+                            <constraint firstItem="z9A-bg-ITi" firstAttribute="top" secondItem="it5-DO-zr5" secondAttribute="bottom" constant="8" id="H1L-zU-8F1"/>
+                            <constraint firstItem="3nA-LL-7t5" firstAttribute="top" secondItem="CVM-zT-ypQ" secondAttribute="bottom" constant="8" id="OIe-gq-jfU"/>
+                            <constraint firstItem="E1l-aP-Ynd" firstAttribute="leading" secondItem="En9-qh-pfd" secondAttribute="leadingMargin" id="OQ9-US-yNu"/>
+                            <constraint firstItem="it5-DO-zr5" firstAttribute="top" secondItem="CVM-zT-ypQ" secondAttribute="bottom" constant="8" id="dGM-s8-MbS"/>
+                            <constraint firstItem="3nA-LL-7t5" firstAttribute="trailing" secondItem="En9-qh-pfd" secondAttribute="trailingMargin" id="lGo-hd-Eza"/>
+                            <constraint firstItem="it5-DO-zr5" firstAttribute="leading" secondItem="En9-qh-pfd" secondAttribute="leadingMargin" constant="57" id="pwv-Qw-jys"/>
+                            <constraint firstItem="z9A-bg-ITi" firstAttribute="trailing" secondItem="En9-qh-pfd" secondAttribute="trailingMargin" id="uVu-r3-9YZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Juego de Memoria" id="WAR-G8-4YU"/>
+                    <connections>
+                        <outlet property="bt1" destination="U2C-3d-ySN" id="Di7-nE-a8D"/>
+                        <outlet property="bt10" destination="ZCR-6I-Ijb" id="EqJ-VF-OYh"/>
+                        <outlet property="bt11" destination="UTX-DW-HnQ" id="fDm-LK-XQa"/>
+                        <outlet property="bt12" destination="LDO-UL-Sks" id="pAT-BI-m4K"/>
+                        <outlet property="bt13" destination="Xqw-9T-sKA" id="SBO-LT-e8J"/>
+                        <outlet property="bt14" destination="fDK-Ol-yo6" id="hNf-zi-BKK"/>
+                        <outlet property="bt15" destination="jYB-cK-xJf" id="fNN-dg-i7m"/>
+                        <outlet property="bt16" destination="vCa-1p-aUF" id="eb6-gL-nMh"/>
+                        <outlet property="bt2" destination="cy7-ht-RYk" id="SvA-Ug-OFv"/>
+                        <outlet property="bt3" destination="2YI-1E-SG8" id="E0U-bG-TAP"/>
+                        <outlet property="bt4" destination="aaF-kT-0Y4" id="xoB-N6-KJE"/>
+                        <outlet property="bt5" destination="pBx-G0-nLj" id="mer-fU-nT2"/>
+                        <outlet property="bt6" destination="w9s-Et-h5T" id="qqh-nu-1U4"/>
+                        <outlet property="bt7" destination="d17-jG-eEp" id="NDh-iM-J4x"/>
+                        <outlet property="bt8" destination="PLb-y9-Zwn" id="b4V-jP-Mcs"/>
+                        <outlet property="bt9" destination="ZSS-QQ-8vX" id="scq-mc-kFC"/>
+                        <outlet property="lbExitos" destination="it5-DO-zr5" id="YXE-Zc-qM7"/>
+                        <outlet property="lbMensaje" destination="z9A-bg-ITi" id="8fu-xt-okY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mqI-bP-YmI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1599" y="399"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Circle_Blue.png" width="64" height="64"/>
+        <image name="Circle_Green.png" width="64" height="64"/>
+        <image name="Circle_Red.png" width="64" height="64"/>
+        <image name="Circle_Yellow.png" width="64" height="64"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="laL-Vm-Llh"/>
+    </inferredMetricsTieBreakers>
+</document>
